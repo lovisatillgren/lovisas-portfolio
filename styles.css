@@ -1,0 +1,240 @@
+body {
+    background-color: #dadada; /* Light blue background */
+    margin: 0;
+}
+.header-wrapper {
+    background-color: blanchedalmond;
+}
+.yrgo {
+    font-size: 30px;
+}
+.dd {
+    margin-top: 140px;
+}
+.ruta1 {
+    background-color: antiquewhite;
+    margin: 20 px;
+    padding: 180px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7a2258;
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 100;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+}
+
+.name-title {
+  font-size: 60px;
+}
+
+h2{font-size: 26px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+}
+
+
+p{
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 200;
+}
+
+a{
+  font-size: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 200;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+video{
+  max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  .arbete1 {
+    max-width: 50%;
+  }
+
+  .toolbar {
+    background-color: rgb(175, 175, 250);
+    padding: 10px 0;
+    p:
+  }
+
+  .container5 {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .container6 {
+  text-align: center;
+  }
+
+  .toolbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-wrapper {
+    display: flex;
+    gap:15px;
+  
+  }
+
+  .menu-wrapper a {
+    font-size: 16px;
+  }
+
+  .logo-text {
+    font-size: 16px; /* Adjust the font size for LOVISA */
+  }
+
+  * {
+  box-sizing: border-box;
+}
+
+.wrapper { 
+  display: flex;
+  padding: 30px 180px;
+  background: rgb(233 237 252);
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.wrapper > div {
+  padding: 40px;  
+}
+
+.item-1 {
+  background: rgb(242 245 255);
+  width: 50%;
+}
+
+.item-2 {
+  background: rgb(242 245 255);
+  width: 50%;
+}
+
+
+.name-wrapper > div {
+
+}
+
+.name {
+  background: rgb(228 234 255);
+  text-align: center;
+  padding: 250px;
+}
+
+
+.cards {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+
+}
+
+.cards > div {
+    width: 50%;
+  flex-grow: 1;
+  padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+  background: gray;
+}
+
+.cards h1 {
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+  h1 {
+      font-size: 24px; /* Smaller heading size */
+  }
+  
+  .name-title {
+      font-size: 28px; /* Smaller name size */
+  }
+
+  .name {
+    padding: 150px;
+  }
+
+  h2 {
+      font-size: 18px; /* Smaller subheading size */
+  }
+
+  p {
+      font-size: 16px; /* Smaller paragraph size */
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  .wrapper {
+      flex-direction: column; /* Stack items vertically */
+      padding: 10px; /* Reduce padding */
+  }
+
+  .item-1, .item-2 {
+      width: 100%; /* Full width for items */
+      margin-bottom: 20px; /* Spacing between items */
+  }
+
+  .container6 {
+      padding: 10px; /* Less padding for smaller screens */
+  }
+
+  .toolbar {
+      flex-direction: column; /* Stack toolbar items vertically */
+      padding: 10px; /* Reduce padding */
+  }
+}
+
+
+
+
+
+
+
+
