@@ -1,5 +1,5 @@
 body {
-    background-color: #dadada; /* Light blue background */
+    background-color: #f8fafe;
     margin: 0;
 }
 .header-wrapper {
@@ -11,6 +11,34 @@ body {
 .dd {
     margin-top: 140px;
 }
+
+
+/* Centering container */
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px; 
+}
+
+/* Arrow styling */
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid rgb(22, 9, 9);
+  animation: bounce 1.5s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+
+
 .ruta1 {
     background-color: antiquewhite;
     margin: 20 px;
@@ -69,6 +97,48 @@ video{
   max-width: 100%;
 }
 
+
+/* Footer */
+.footer {
+  background: linear-gradient(180deg, #ecf3ff, #ffffff);
+  padding: 40px 0;
+  text-align: center;
+  color: #000000;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+}
+
+.footer-content p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #7a2258;
+  text-decoration: underline;
+}
+
+.footer-content p:last-child {
+  font-size: 14px;
+  color: #777;
+}
+
+
+
 * {
     box-sizing: border-box;
   }
@@ -78,9 +148,9 @@ video{
   }
 
   .toolbar {
-    background-color: rgb(175, 175, 250);
+    background-color: rgb(248, 250, 254);
     padding: 10px 0;
-    p:
+    text-align: center;
   }
 
   .container5 {
@@ -90,6 +160,8 @@ video{
 
   .container6 {
   text-align: center;
+  padding-left: 230px ;
+    padding-right: 230px ;
   }
 
   .toolbar-wrapper {
@@ -119,7 +191,7 @@ video{
 .wrapper { 
   display: flex;
   padding: 30px 180px;
-  background: rgb(233 237 252);
+  background: rgb(236 243 255);
   justify-content: space-between;
   font-size: 2rem;
 }
@@ -129,24 +201,71 @@ video{
 }
 
 .item-1 {
-  background: rgb(242 245 255);
+  background: rgb(255, 255, 255);
   width: 50%;
 }
 
 .item-2 {
-  background: rgb(242 245 255);
+  background: rgb(255, 255, 255);
   width: 50%;
 }
 
+.item-1:hover, .item-2:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.art-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px auto;
+  max-width: 800px; /* Adjust this value as needed */
+}
+
+.art-item {
+  padding: 5px;
+  background-color: #f8fafe; /* Optional: background for each item */
+}
+
+.art-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Optional: rounded corners */
+}
 
 .name-wrapper > div {
 
 }
 
 .name {
-  background: rgb(228 234 255);
   text-align: center;
-  padding: 250px;
+  padding: 220px;
+}
+
+.name {
+  background: linear-gradient(1deg, #f8fafe, #9cbbf3);
+  animation: gradientAnimation 5s ease infinite;
+}
+
+.name-title:hover {
+  font-style: italic; /* Adds italic style */
+  transition: all 0.08s;
+  letter-spacing: 0.1em;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.name_project {
+  text-align: center;
+  background: linear-gradient(1deg, #f8fafe, #9cbbf3);
+  animation: gradientAnimation 5s ease infinite;
 }
 
 
@@ -172,10 +291,30 @@ video{
 }
 
 
+.image-box {
+  width: 750px; /* Define the width of the box */
+  margin: 0 auto 30px; /* Center the box and add space below */
+}
 
+.image-box img {
+  width: 100%; /* Make the image scale to fit the box */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove inline spacing */
+}
 
+.back-arrow {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  font-size: 30px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-
+.back-arrow:hover {
+  color: #7a2258;
+}
 
 
 
@@ -196,7 +335,7 @@ video{
   }
 
   .name {
-    padding: 150px;
+    padding: 110px;
   }
 
   h2 {
@@ -218,7 +357,6 @@ video{
 
   .item-1, .item-2 {
       width: 100%; /* Full width for items */
-      margin-bottom: 20px; /* Spacing between items */
   }
 
   .container6 {
@@ -230,11 +368,3 @@ video{
       padding: 10px; /* Reduce padding */
   }
 }
-
-
-
-
-
-
-
-
