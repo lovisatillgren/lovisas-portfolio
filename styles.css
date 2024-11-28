@@ -2,100 +2,11 @@ body {
     background-color: #f8fafe;
     margin: 0;
 }
-.header-wrapper {
-    background-color: blanchedalmond;
-}
-.yrgo {
-    font-size: 30px;
-}
-.dd {
-    margin-top: 140px;
-}
 
+/* Typsnitt, storlek*/
 
-/* Centering container */
-.arrow-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px; 
-}
-
-/* Arrow styling */
-.arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 15px solid rgb(22, 9, 9);
-  animation: bounce 1.5s infinite;
-}
-
-/* Bounce animation */
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(10px); }
-}
-
-
-.case-details {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  max-width: 800px;
-  margin: 40px 10px;
-  font-family: "Poppins", sans-serif;
-}
-
-.detail-item {
-  flex: 1 1 150px; /* Adjusts layout for smaller screens */
-  text-align: left;
-}
-
-.detail-title {
+.logo-text {
   font-size: 16px;
-  font-weight: 600;
-  color: #666;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.detail-content {
-  font-size: 18px;
-  font-weight: 400;
-  color: #000;
-  line-height: 1.6;
-}
-
-.något {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin: 40px 10px;
-  font-family: "Nunito Sans", sans-serif;
-
-}
-
-
-.ruta1 {
-    background-color: antiquewhite;
-    margin: 20 px;
-    padding: 180px;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 70px;
-    padding-top: 70px;
-}
-
-a {
-    color: #000000;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #7a2258;
-    text-decoration: underline;
 }
 
 h1{
@@ -105,51 +16,181 @@ h1{
     font-weight: 800;
 }
 
-.name-title {
-  font-size: 60px;
-}
-
 h2{font-size: 26px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
 }
 
-
-.background-story {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  margin: 20px 0;
-}
-
-.background-story img {
-  max-width: 200px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-
 p{
-    font-size: 20px;
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 200;
-}
-
-a{
   font-size: 20px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 200;
 }
 
+a{
+  color: #000000;
+  text-decoration: none;
+font-size: 20px;
+font-family: "Nunito Sans", sans-serif;
+font-weight: 200;
+}
+
+a:hover {
+  color: #7a2258;
+  text-decoration: underline;
+}
+
+/* Containers för LOVISA TILLGREN, Digital designer delen*/
 
 img{
     max-width: 100%;
 }
 
-video{
-  max-width: 100%;
+* {
+    box-sizing: border-box;
+  }
+
+  .toolbar {
+    background-color: rgb(248, 250, 254);
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .toolbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .name-wrapper > div {
+
 }
 
+.name {
+  text-align: center;
+  padding: 220px;
+  background: linear-gradient(1deg, #f8fafe, #9cbbf3);
+  animation: gradientAnimation 5s ease infinite;
+}
+
+.name-title {
+  font-size: 60px;
+}
+
+.name-title:hover {
+  font-style: italic;
+  transition: all 0.08s;
+  letter-spacing: 0.1em;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.name_project {
+  text-align: center;
+  background: linear-gradient(1deg, #f8fafe, #9cbbf3);
+  animation: gradientAnimation 5s ease infinite;
+}
+
+  .arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px; 
+  }
+  
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid rgb(22, 9, 9);
+    animation: bounce 1.5s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+  }
+
+  .container5 {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .container6 {
+  text-align: center;
+  padding-left: 230px ;
+    padding-right: 230px ;
+  }
+
+  .menu-wrapper {
+    display: flex;
+    gap:15px;
+  
+  }
+
+  .menu-wrapper a {
+    font-size: 16px;
+  }
+
+
+  * {
+  box-sizing: border-box;
+}
+
+.wrapper { 
+  display: flex;
+  padding: 30px 180px;
+  background: rgb(236 243 255);
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.wrapper > div {
+  padding: 40px;  
+}
+
+.item-1 {
+  background: rgb(255, 255, 255);
+  width: 50%;
+}
+
+.item-2 {
+  background: rgb(255, 255, 255);
+  width: 50%;
+}
+
+.item-1:hover, .item-2:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Containers för konsten*/
+
+.art-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.art-item {
+  padding: 5px;
+  background-color: #f8fafe;
+}
+
+.art-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
 
 /* Footer */
 .footer {
@@ -191,168 +232,56 @@ video{
 }
 
 
+/* CSS kod endast på proejekt sidan */
 
-* {
-    box-sizing: border-box;
-  }
-
-  .arbete1 {
-    max-width: 50%;
-  }
-
-  .toolbar {
-    background-color: rgb(248, 250, 254);
-    padding: 10px 0;
-    text-align: center;
-  }
-
-  .container5 {
-    margin: 0 auto;
-    padding: 0 30px;
-  }
-
-  .container6 {
-  text-align: center;
-  padding-left: 230px ;
-    padding-right: 230px ;
-  }
-
-  .toolbar-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .menu-wrapper {
-    display: flex;
-    gap:15px;
-  
-  }
-
-  .menu-wrapper a {
-    font-size: 16px;
-  }
-
-  .logo-text {
-    font-size: 16px; /* Adjust the font size for LOVISA */
-  }
-
-  * {
-  box-sizing: border-box;
-}
-
-.wrapper { 
+.case-details {
   display: flex;
-  padding: 30px 180px;
-  background: rgb(236 243 255);
-  justify-content: space-between;
-  font-size: 2rem;
-}
-
-.wrapper > div {
-  padding: 40px;  
-}
-
-.item-1 {
-  background: rgb(255, 255, 255);
-  width: 50%;
-}
-
-.item-2 {
-  background: rgb(255, 255, 255);
-  width: 50%;
-}
-
-.item-1:hover, .item-2:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
-.art-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin: 20px auto;
-  max-width: 800px; /* Adjust this value as needed */
-}
-
-.art-item {
-  padding: 5px;
-  background-color: #f8fafe; /* Optional: background for each item */
-}
-
-.art-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px; /* Optional: rounded corners */
-}
-
-.name-wrapper > div {
-
-}
-
-.name {
-  text-align: center;
-  padding: 220px;
-}
-
-.name {
-  background: linear-gradient(1deg, #f8fafe, #9cbbf3);
-  animation: gradientAnimation 5s ease infinite;
-}
-
-.name-title:hover {
-  font-style: italic; /* Adds italic style */
-  transition: all 0.08s;
-  letter-spacing: 0.1em;
-}
-
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-
-.name_project {
-  text-align: center;
-  background: linear-gradient(1deg, #f8fafe, #9cbbf3);
-  animation: gradientAnimation 5s ease infinite;
-}
-
-
-.cards {
-  margin-top: 30px;
-  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-
+  max-width: 800px;
+  margin: 40px 10px;
+  font-family: "Poppins", sans-serif;
 }
 
-.cards > div {
-    width: 50%;
-  flex-grow: 1;
-  padding-top: 70px;
-    padding-bottom: 70px;
-    padding-left: 50px;
-    padding-right: 50px;
-  background: gray;
+.detail-item {
+  flex: 1 1 150px;
+  text-align: left;
 }
 
-.cards h1 {
-    font-weight: 400;
+.detail-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
+.detail-content {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.6;
+}
+
+.något {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 40px 10px;
+  font-family: "Nunito Sans", sans-serif;
+
+}
 
 .image-box {
   padding: 0 280px;
-  margin: 0 auto 30px; /* Center the box and add space below */
+  margin: 0 auto 30px;
 }
 
 .image-box img {
-  width: 100%; /* Make the image scale to fit the box */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove inline spacing */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .back-arrow {
@@ -374,17 +303,14 @@ video{
 
 
 
-
-
-
 /* Media Queries for Mobile */
 @media (max-width: 600px) {
   h1 {
-      font-size: 24px; /* Smaller heading size */
+      font-size: 24px; 
   }
   
   .name-title {
-      font-size: 28px; /* Smaller name size */
+      font-size: 28px;
   }
 
   .name {
@@ -395,11 +321,11 @@ video{
   }
 
   h2 {
-      font-size: 18px; /* Smaller subheading size */
+      font-size: 18px;
   }
 
   p {
-      font-size: 16px; /* Smaller paragraph size */
+      font-size: 16px;
   }
 
   a {
@@ -407,16 +333,16 @@ video{
   }
 
   .wrapper {
-      flex-direction: column; /* Stack items vertically */
-      padding: 10px; /* Reduce padding */
+      flex-direction: column;
+      padding: 10px;
   }
 
   .item-1, .item-2 {
-      width: 100%; /* Full width for items */
+      width: 100%; 
   }
 
   .container6 {
-      padding: 10px; /* Less padding for smaller screens */
+      padding: 10px;
   }
 
   .image-box {
@@ -424,7 +350,7 @@ video{
   }
 
   .toolbar {
-      flex-direction: column; /* Stack toolbar items vertically */
-      padding: 10px; /* Reduce padding */
+      flex-direction: column;
+      padding: 10px;
   }
 }
